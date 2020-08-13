@@ -1,5 +1,7 @@
 package com.qa.demo.service;
 
+import static org.junit.jupiter.api.Assertions.fail;
+
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -30,6 +32,26 @@ public class PersonServiceUnitTest {
 		Assertions.assertThat(this.service.create(this.TEST_PERSON)).isEqualTo(this.TEST_SAVED_PERSON);
 
 		Mockito.verify(this.repo, Mockito.times(1)).save(this.TEST_PERSON);
+	}
+
+	@Test
+	public void testReadOne() {
+		fail();
+	}
+
+	@Test
+	public void testReadAll() {
+		fail();
+	}
+
+	@Test
+	public void testReadUpdate() {
+		fail();
+	}
+
+	@Test
+	public void testReadDelete() {
+		fail();
 	}
 
 }
